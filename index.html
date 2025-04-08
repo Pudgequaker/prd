@@ -118,6 +118,7 @@
     }
 
     #ContextContainer {
+      display: none;
       position: absolute;
       left: 0px;
       top: 0px;
@@ -125,11 +126,13 @@
     }
 
     #ContextContainer.shown {
+      display: none;
       background: rgba(0, 0, 0, 0.5);
       border-radius: 0px 0px 5px 0px;
     }
 
     #ContextButton {
+      display: none;
       text-decoration: none;
       color: lightgrey;
       font-size: xx-large;
@@ -141,12 +144,14 @@
     }
 
     #ContextButton:focus {
+      display: none;
       outline: none;
       color: #ffffff;
       opacity: 1.0;
     }
 
     #ContextMenu a {
+      display: none;
       text-decoration: none;
       color: lightgrey;
       background: #444;
@@ -162,6 +167,7 @@
     }
 
     #ContextMenu a:hover {
+      display: none;
       text-decoration: none;
       background: #666666;
       color: #ffffff
@@ -228,6 +234,15 @@
   </script>
   <script src="renpy-pre.js"></script>
   <script async type="text/javascript" src="renpy.js"></script>
+  <script>
+
+let tg = window.Telegram.WebApp;
+tg.requestFullscreen();
+tg.lockOrientation("landscape");
+
+</script>
+
+
 </body>
 
 </html>
